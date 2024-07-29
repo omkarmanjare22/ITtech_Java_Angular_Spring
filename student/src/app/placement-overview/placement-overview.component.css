@@ -1,0 +1,42 @@
+.overview-container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.overview-container h2 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.overview-container h3 {
+    color: #333;
+    margin-top: 20px;
+}
+
+.overview-container p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.overview-container ul {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.overview-container ul li {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.overview-container a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.overview-container a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,52 @@
+<nav class="sub-nav">
+    <ul>
+        <br><br><br><br>
+      <li><a (click)="changeContent([
+        { heading: 'Technology Training for Colleges', content: 'This division is concerned with providing Skill-based Training (Technical and soft skills), Assessment and Campus placement services to colleges and universities across India. 
+         The Information Technology (IT) landscape is constantly changing and evolving, posing a challenge to keep up with this fast paced development. We at ITTech understand that colleges and other academic institutions are required to implement a curriculum-based, time-bound teaching program. It is here that we can partner with the colleges by supplementing and complementing the curriculum by offering training to students in areas beyond their purview. Owing to our extensive experience in the IT field, we are aware of the constantly changing manpower requirements of the Industry. We would thus act as intermediaries between colleges who are looking to place their students and corporate institutions who are looking to employ suitable candidates.', image: '/assets/trans.png' },
+        { heading: 'The Institutional (College) Partnerships Division of ITTech has outlined the following programs for this purpose:', content: '- Providing focused training in novel Information Technologies to make the students employment-ready.
+        <br>- Imparting instruction in soft skills, interview techniques and personality development to give an edge to the students in the competitive world.
+        <br>- Placement services to colleges and universities across India through aggressive market research and by actively hunting for companies undertaking recruitment.
+        <br>- Using our goodwill to bring reputed companies to colleges for Campus Recruitment of ITTech-trained talent.
+        <br>- Leveraging our familiarity with our clients to persuade them to customize their requirements to suit the proficiencies of fresh college pass outs.
+        <br>- Arrangement of Special sessions by stalwarts in the Industry to give students insights into the working of the corporate world.', image: '/assets/trans.png' }
+      ])">Collage</a></li>
+
+      <li><a (click)="changeContent([
+        { heading: 'PEOPLE / CUSTOMERS', content: 'Customer satisfaction is at the heart of our training process. They say that it costs five times as much to attract new customers as it does to keep an existing one. Building customer relationships for us is moving up a ladder and at top rung of the ladder are our loyal customers.
+        <br>Continuous improvement is our commitment :
+        <br>Primary focus on service and on service.
+        <br>The relationship we have with each and every customer is incredibly important to us. And that means working tirelessly every day to give all our customers the best possible service at every point of contact they have with us.
+        <br>Whole working mechanism is built around the focus on customers. We will continue to place customers needs first - every time.', image: '/assets/trans.png' },
+        { heading: 'WHAT WE DO?', content: 'ITTech Corporate Training & Workshops Vertical is an entity specifically created to cater to corporate houses - to make the engagement more efficient, cost effective and take minimum amount of time.
+        <br>We specialize in designing courses tailored to meet your specific needs, like Knowledge, Skills, Tools, Techniques and Participants Profile designed to get results within your specific time frame and budget. We assure you to seamlessly integrate these programs into your convenient schedule to quickly train the employees and give them the competitive edge which is vital in todays day and age.
+        <br>Corporate Training Division of ITTech helps organizations to expand performance by increasing productivity and effectiveness of individuals and aligning them to their business objectives.
+        <br>Provide a measurable return on investment for their training Investments, creating the business justification for training expenditures. assess employee competencies against job requirements, identify gaps and create development plans to enable effectiveness and growth.
+        <br>
+        <br>- Induction or Entry Level Training to new recruits thereby making them billable in the shortest possible time
+        <br>- Based on a Training Need Analysis, Training of experienced personnel in various technologies, thus helping Companies across the industry upgrade their knowledge and skills
+        <br>- Customized trainings on various projects and technology specific trainings in niche areas
+        <br>- Open House Programs and Workshops conducted by highly experienced faculty to encourage collaborative learning. ', image: '/assets/trans.png' }
+      ])">Corporate/Consulting</a></li>
+
+      <li><a (click)="changeContent([
+        { heading: 'The responsibility of this division is to provide quality staffing services to various sectors including IT, BPO, KPO, Telecom and Manufacturing for supporting functions such as Technical, HR, Finance & Accounts, Admin, Sales, and Marketing. Types of services made available are :', content: '- Permanent Staffing
+        <br>- Contractual Staffing
+        <br>- Assessment Services
+        <br>- RPO
+        <br>- Pay Roll Management.', image: '/assets/trans.png' },
+        { heading: '', content: '', image: '/assets/trans.png' }
+      ])">Staffing</a></li>
+
+      <li><a (click)="changeContent([
+        { heading: '', content: '', image: '/assets/Testing.png' },
+        { heading: '', content: '', image: '/assets/trans.png' }
+      ])">Testing</a></li>
+    </ul>
+    
+    <div class="dynamic-content" *ngFor="let section of dynamicContent">
+        <h2>{{ section.heading }}</h2>
+        <p [innerHTML]="section.content"></p>
+        <img [src]="section.image" alt="{{ section.heading }}" class="dynamic-image">
+      </div>
+    </nav>

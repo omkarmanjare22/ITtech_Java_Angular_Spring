@@ -1,0 +1,9 @@
+.background-container {
+    background-image: url('/assets/logonew.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh; /* Adjust height as needed */
+    width: 100%;
+  }
+  

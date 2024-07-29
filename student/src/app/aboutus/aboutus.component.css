@@ -1,0 +1,41 @@
+/* about-us.component.css */
+
+.about-us,
+.vision-section,
+.mission-section,
+.values-section {
+  margin: 20px; /* Adds margin around each section */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-us h2,
+.vision-section h3,
+.mission-section h3,
+.values-section h3 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #ccc;
+}
+
+.about-us p,
+.vision-section p,
+.mission-section p {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.values-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.values-section ul li {
+  margin-bottom: 5px;
+}

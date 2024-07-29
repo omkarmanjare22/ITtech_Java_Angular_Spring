@@ -1,0 +1,80 @@
+/* home.component.css or home.component.scss */
+
+/* .background-container {
+    background-image: url('/assets/Symb.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:unset;
+    height: 75vh;
+    width: 100%;
+  } */
+
+
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .slider {
+    position: relative;
+    width: 100%;
+    height: 50vh; /* Full viewport height */
+    overflow: hidden;
+  }
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .slide.active {
+    opacity: 1;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill; /* Ensures the image covers the entire slide */
+  }
+  
+  .home {
+    max-width: 85%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+  }
+
+  .client {
+    max-width: 85%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+  }
+
+  .button {
+    display: flex;
+    margin: auto;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    background-color: #007bff;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+  
+  h5{
+    text-align: center; /* Centers the heading text */
+}
+

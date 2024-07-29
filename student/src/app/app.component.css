@@ -1,0 +1,65 @@
+
+nav{
+    position: fixed; /* Fixes the navbar to the top of the viewport */
+    top: 0;
+    width: 100%; /* Makes the navbar span the full width of the viewport */
+    padding: 10px 0;
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    z-index: 1000; /* Ensures the navbar stays above other content */ 
+}
+.nav-links {
+    margin-left: auto; /* Push the links to the right */
+    margin-right: 20px; /* Add some space on the right */
+}
+/* Dropdown menu */
+.dropdown-menu {
+    background-color: #fff; /* Background color of the dropdown menu */
+    border: 1px solid rgba(0, 0, 0, 0.15); /* Border color */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle elevation effect */
+}
+
+/* Dropdown items */
+.dropdown-item {
+    color: #333; /* Text color */
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: #f8f9fa; /* Background color on hover/focus */
+}
+
+/* Active dropdown item */
+.dropdown-item.active {
+    background-color: #007bff; /* Background color for the active item */
+    color: #fff; /* Text color for the active item */
+}
+
+/* Dropdown toggle link */
+.nav-link.dropdown-toggle {
+    cursor: pointer; /* Change cursor to pointer for the dropdown toggle */
+}
+
+.navbar img {
+    height: 50px; /* Adjust the logo height as needed */
+    margin-left: 20px; /* Add some space on the left */
+}
+
+.navbar a {
+    color: #1a2438; /* Default link color */
+}
+
+.navbar a:hover {
+    background-color: #ffffff; /* Background color on hover */
+    color: #333; /* Text color on hover */
+}
+
+.navbar a:active {
+    background-color: #dbd0d0; /* Background color when active */
+    color: #000; /* Text color when active */
+}
+
+.content {
+    margin-top: 60px; /* Adds top margin to avoid content being hidden under the navbar */
+    padding: 20px;
+}

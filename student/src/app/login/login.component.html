@@ -1,0 +1,46 @@
+<div class="row">
+    <div class="card col-md-6 offset-md-3 offset-md-3">
+        <div class="row">
+            <h3 class="text-center"> Registration </h3>
+            <hr />
+            <div class="card-body">
+                <form (ngSubmit)="onSubmit()">
+
+                    <div class="form-group">
+                        <label> First Name</label>
+                        <input type="text" class="form-control" id="firstName" [(ngModel)]="logIn.firstName"
+                            name="firstName">
+                    </div>
+
+                    <div class="form-group">
+                        <label> Last Name</label>
+                        <input type="text" class="form-control" id="lastName" [(ngModel)]="logIn.lastName"
+                            name="lastName">
+                    </div>
+
+                    <div class="form-group">
+                        <label> Email Id</label>
+                        <input type="text" class="form-control" id="emailId" [(ngModel)]="logIn.emailId"
+                            name="emailId">
+                    </div>
+
+                    <div class="form-group">
+                        <label> User Name</label>
+                        <input type="text" class="form-control" id="userName" [(ngModel)]="logIn.userName"
+                            name="userName">
+                    </div>
+
+                    <div class="form-group">
+                        <label> Password</label>
+                        <input type="text" class="form-control" id="password" [(ngModel)]="logIn.password"
+                            name="password">
+                    </div>
+
+                    <br />
+                    <button class="btn btn-success" type="submit">Submit</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

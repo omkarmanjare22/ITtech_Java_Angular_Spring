@@ -1,0 +1,10 @@
+<div class="contact-info">
+    <h2>Contact Information</h2>
+    <div *ngFor="let contact of contactDetails" class="contact-card">
+      <h3>{{ contact.location }}</h3>
+      <p>{{ contact.address }}</p>
+      <p>Phone: <a href="tel:{{ contact.phone }}">{{ contact.phone }}</a></p>
+      <p>Email: <a href="mailto:{{ contact.email }}">{{ contact.email }}</a></p>
+    </div>
+  </div>
+  
